@@ -46,11 +46,10 @@ class Simplex(Scene):
             \]""", font_size=40) \
             .to_edge(LEFT)
 
-        highlight_rect_c = Rectangle(width=2.2, height=0.6, color=ORANGE)
-
+        # Vertici della zona ammissibile
         pts = [(0, 2), (1, 2), (4, 0),(3, 0), (0, 1.5)]
 
-        # constraint highlights and lines
+        # Rettangoli che racchiudono l'equazionoe della retta che sta venendo disegnata
         highlight_rects = [
             Rectangle(
                 width  = 3,
